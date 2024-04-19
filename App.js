@@ -7,15 +7,8 @@ export default function App() {
   const img = {
     uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMal0tBwFJFF0CVIe7cixk3vrardx6ESUvFA&usqp=CAU",
   };
-  const data = [
-    {
-      id: "1",
-      backgroundColor: "white",
-      texto: "roger guedes",
-      component: <Img />,
-    },
-  ];
-  const dados = [{ id: "1", component: <Img /> }];
+
+  const dados = [{ id: "1", component: <Img caminhoImg={img} /> }];
   const rdItem = ({ item }) => {
     return item.component;
   };
